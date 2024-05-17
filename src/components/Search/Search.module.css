@@ -1,0 +1,30 @@
+.search {
+	position: relative;
+    width: 344px;
+    height: 44px;
+    border: 1px solid #323b54;
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.searchInput {
+	caret-shape: block;
+    width: calc(100% - 32px);
+    height: 40px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.14286;
+    color: #475069;
+}
+
+.searchInput:focus {
+	caret-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}

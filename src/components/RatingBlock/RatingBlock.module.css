@@ -1,0 +1,37 @@
+.ratingBlock {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	border-radius: 8px;
+	padding: 4px 8px;
+	width: 65px;
+	height: 32px;
+	backdrop-filter: blur(8px);
+	background: rgba(0, 0, 0, 0.65);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #ffad49;
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+
+.ratingBlockParagraph {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #ffad49;
+}
+
+.ratingBlock:hover {
+	transform: translate(1, 1);
+	box-shadow: 0px 0px 10px 1px rgba(255, 164, 54, 0.9);
+}
+
+.ratingBlock:active {
+	scale: 0.97;
+}

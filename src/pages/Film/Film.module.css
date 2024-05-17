@@ -1,0 +1,93 @@
+.film {
+	margin: 0 auto;
+	width: 1050px;
+	margin-bottom: 100px;
+}
+
+.head {
+	border-radius: 24px;
+	padding: 40px;
+	backdrop-filter: blur(24px);
+	background: rgba(32, 40, 62, 0.8);
+}
+.heading {
+	font-size: 32px;
+}
+
+.paragraph {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.3;
+	color: #beb7fb;
+}
+
+.filmInfo {
+	margin-top: 80px;
+	display: flex;
+	column-gap: 80px;
+}
+
+.filmImage {
+	img {
+		border-radius: 24px;
+		width: 480px;
+		height: 720px;
+	}
+}
+
+.filmText {
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+}
+
+.rating {
+	display: flex;
+	gap: 10px;
+	position: relative;
+}
+
+.ratingBlock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	border-radius: 8px;
+	padding: 4px 8px;
+	width: 65px;
+	height: 32px;
+	backdrop-filter: blur(8px);
+	background: rgba(0, 0, 0, 0.65);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #ffad49;
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+
+.filmInfoText {
+}
+
+.p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	span {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 160%;
+		color: rgb(194, 194, 194);
+	}
+}
+
+.feedBack {
+	margin-top: 80px;
+}
+
+.feedBackTitle {
+	margin-bottom: 15px;
+	font-weight: 700;
+font-size: 20px;
+line-height: 160%;
+}

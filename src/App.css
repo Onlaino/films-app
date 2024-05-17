@@ -1,0 +1,12 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	position: relative;
+}
+
+.container {
+	margin: 0 120px;
+}

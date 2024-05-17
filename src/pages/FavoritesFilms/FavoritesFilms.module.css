@@ -1,0 +1,16 @@
+.filmList {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.noFavorite {
+	h3 {
+		font-size: 32px;
+		font-weight: normal;
+		font-style: italic;
+		color: #7B6EF6 ;
+	}
+}

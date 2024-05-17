@@ -1,0 +1,54 @@
+.body {
+	margin-top: 160px;
+	margin-bottom: 60px;
+}
+
+.bodyHeader {
+	width: 588px;
+	height: 144px;
+}
+
+.bodyInput {
+	margin-top: 24px;
+	display: flex;
+	column-gap: 48px;
+	align-items: center;
+}
+
+.bodyParagraph {
+	margin-top: 16px;
+}
+
+.search {
+	position: relative;
+}
+
+.clearInput {
+	cursor: pointer;
+	right: 25px;
+	top: 24px;
+	position: absolute;	
+	border: none;
+	background: transparent;
+	outline: none;
+	transition: all .35s ease;
+	font-size: 15px;
+	color: #6f7173;
+}
+
+.clearInput:hover {
+	transform: scale(1.1);
+}
+
+.clearInput:active {
+	transform: scale(.95);
+}
+
+@keyframes clearInputScale {
+	from {
+		scale: 0.1;
+	}
+	to {
+		scale: 1;
+	}
+}

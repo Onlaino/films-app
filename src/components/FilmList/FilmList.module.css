@@ -1,0 +1,21 @@
+.filmList {
+	margin-top: 88px;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap:24px;
+	row-gap: 16px;
+}
+
+.oops {
+	text-align: center;
+	margin: 100px 0;
+}
+
+.heading {
+	font-size: 48px;
+}
+
+.paragraph {
+	font-size: 20px;
+	line-height: 1.6;
+}

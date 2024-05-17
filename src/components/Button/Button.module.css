@@ -1,0 +1,45 @@
+.button {
+	outline: none;
+	border: none;
+	border-radius: 12px;
+	padding: 16px 32px;
+	background-color: #7b6ef6;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	&.button:hover {
+		background-color: #5042ce;
+	}
+	&.button:active {
+		scale: 0.95;
+	}
+}
+
+.buttonTransparent {
+	background: transparent;
+	outline: none;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3px;
+	font-size: 15px;
+	letter-spacing: 0.02em;
+	line-height: 1.4;
+	color: #a8aebf;
+	cursor: pointer;
+}
+
+.buttonPrimary {
+	border-radius: 12px;
+	padding: 16px 32px;
+	background-color: #7b6ef6;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	
+	&.button:hover {
+		background-color: #5042ce;
+	}
+	&.button:active {
+		scale: 0.95;
+	}
+}
