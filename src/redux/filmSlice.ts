@@ -1,5 +1,5 @@
-import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { IFilm } from "../interfaces/film.interface";
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { IFilm } from '../interfaces/film.interface';
 
 interface FilmState {
 	filmsByUser: Record<string, IFilm[]>;
@@ -21,7 +21,14 @@ const filmSlice = createSlice({
 			if (!state.filmsByUser[userId]) {
 				state.filmsByUser[userId] = [];
 			}
-			state.filmsByUser[userId].push(film);
+
+			const filmExists = state.filmsByUser[userId].some(
+				existingFilm => existingFilm.id === film.id
+			);
+
+			if (!filmExists) {
+				state.filmsByUser[userId].push(film);
+			}
 		},
 		removeFilmForUser: (
 			state,
@@ -31,7 +38,7 @@ const filmSlice = createSlice({
 			const userFilms = state.filmsByUser[userId];
 			if (userFilms) {
 				state.filmsByUser[userId] = userFilms.filter(
-					(film) => film.id !== filmId
+					film => film.id !== filmId
 				);
 			}
 		},

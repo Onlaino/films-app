@@ -9,6 +9,7 @@ export const FavoritesFilms: FC = () => {
 	const [favoriteFilms, setFavoriteFilms] = useState<any[] | ReactNode>([]);
 	const persistedUser = useSelector((s: RootState) => s.user);
 	const persistFilms = useSelector((s: RootState) => s.film.filmsByUser);
+	
 	const noFavoriteFilms = (
 		<div className={cl.noFavorite}>
 			<h3>Вы еще не добавили фильмы в избранное!</h3>
